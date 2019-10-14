@@ -31,30 +31,6 @@ puts("# Exercise 4 \n")
 
 instances=["instance1", "instance2", "instance3", "instance4", "instance5"]
 
-# def directions()
-#     instances[i].move_right
-#     instances[i].move_right
-#     instances[i].move_up
-#     instances[i].move_right
-#     instances[i].move_left
-#     instances[i].move_up
-#     instances[i].move_up
-#     instances[i].move_down
-#     instances[i].move_up
-#     instances[i].move_down
-#     instances[i].move_up
-# end
-
-# def final_x_y_coord()
-#     for i in 0..instances.size-1
-#         puts("\nAircraft [#{i}]")
-#         print("Final X-Coord:") 
-#         puts(instances[i].instance_variable_get(:@x))
-#         print("Final Y-Coord: ") 
-#         puts(instances[i].instance_variable_get(:@y))
-#     end
-# end
-
 for i in 0..instances.size-1
     if i==0 
         instances[i] = Aircraft.new(0,0)
@@ -78,7 +54,6 @@ for i in 0..instances.size-1
     puts(instances[i].instance_variable_get(:@x))
     print("Initial Y-Coord: ") 
     puts(instances[i].instance_variable_get(:@y))
-    # directions()
     instances[i].move_right
     instances[i].move_right
     instances[i].move_up
@@ -91,9 +66,6 @@ for i in 0..instances.size-1
     instances[i].move_down
     instances[i].move_up
 end
-
-
-# final_x_y_coord()
 
 for i in 0..instances.size-1
     puts("\nAircraft [#{i}]")
