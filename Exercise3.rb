@@ -22,15 +22,11 @@ class Aircraft
     def move_down
         @y-=1
     end
-    # def final
-    #     puts("#{@@x}")
-    # end
-
 end
 puts("# Exercise 3 \n")
 
 instances=Array["instance1", "instance2", "instance3", "instance4", "instance5"]
-for i in 0..4
+for i in 0..instances.size-1
 
     instances[i] = Aircraft.new
     puts("Creating New Aircraft Object: #{i}")
@@ -41,7 +37,7 @@ for i in 0..4
     puts(instances[i].instance_variable_get(:@y))
 end
 
-for i in 0..4
+for i in 0..instances.size-1
     if i==0
         puts("Aircraft Instance #{i} has moved UP ...")
         instances[i].move_up
@@ -106,12 +102,8 @@ for i in 0..4
     end
 end
 
-
-for i in 0..4
+for i in 0..instances.size-1
     puts("\nAircraft [#{i}]")
-    # puts("Final X-Coord: #{Aircraft.class_variable_get(:@@x)}")
-    # print("Final X-Coord: ")
-    # instances[i].final
     print("Final X-Coord:") 
     puts(instances[i].instance_variable_get(:@x))
     print("Final Y-Coord: ") 
