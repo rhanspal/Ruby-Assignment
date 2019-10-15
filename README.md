@@ -1,6 +1,6 @@
-Ruby Assignment:
+Ruby Programming
 
-Given a series of exercises, implement solutions using the \programming language.
+Given a series of exercises, implement solutions using the Ruby programming language.
 
 The purpose of this exercise is to expose you to two very popular programming languages through a series of a few simple exercises while gaining some experience with Git.
 
